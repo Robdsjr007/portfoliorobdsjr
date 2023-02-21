@@ -253,11 +253,8 @@ header #menu-btn:hover{
 }
 
 .home .image{
-    text-align: center;
     -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-
+    text-align: center;
 }
 
 .home .image img{
@@ -265,7 +262,7 @@ header #menu-btn:hover{
     width: 35rem;
     border-radius: 50% 50% 50% 50%  ;
     object-fit:cover;
-    margin-left: 120px;
+    
 }
 
 .home .content{
