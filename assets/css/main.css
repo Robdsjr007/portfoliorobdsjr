@@ -10,7 +10,7 @@
 6- Qualification Area CSS 
 7- Services Area CSS
 8- Portfolio Area CSS
-9- Testimonials Area CSS
+9- Projects Area CSS
 10- Blog Area CSS
 11- Contact Area CSS
 12- Footer Area CSS
@@ -258,8 +258,8 @@ header #menu-btn:hover{
 }
 
 .home .image img{
-    height: 30rem;
-    width: 35rem;
+    height: 40rem;
+    width: 45rem;
     border-radius: 50% 50% 50% 50%  ;
     object-fit:cover;
     
@@ -269,20 +269,15 @@ header #menu-btn:hover{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 40rem;
         flex: 1 1 40rem;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
-    margin-top: 7rem;
 }
 
 .home .content h2{
@@ -495,11 +490,11 @@ header #menu-btn:hover{
 }
 
  .skill-item.item1 .box:nth-child(3) .progress-bar span{
-    width:85%;
+    width:100%;
 }
 
 .skill-item.item2 .box:nth-child(1) .progress-bar span{
-    width:40%;
+    width:100%;
 }
 
  .skill-item.item2 .box:nth-child(2) .progress-bar span{
@@ -770,15 +765,15 @@ header #menu-btn:hover{
 
 
 
-/*--------------------- 9- Testimonials Area CSS (Start) ---------------------*/
-.testimonial-slider{
+/*--------------------- 9- Projects Area CSS (Start) ---------------------*/
+.projeto-slider{
     position: relative;
     padding-bottom: 4rem;
     overflow: hidden;
 }
 
-.testimonial{
-    background: linear-gradient(40deg, black, rgb(0, 0, 65));;
+.projeto{
+    background: linear-gradient(40deg, black, rgb(0, 0, 65));
 }
 
 .testi-item{
@@ -799,36 +794,70 @@ header #menu-btn:hover{
     border: 0.5rem solid var(--white);
 }
 
-.testi-item .fa-quote-left{
-    display: block;
-    font-size: 3rem;
-    color: var(--white);
-    margin: 1rem 0;
-}
-
-.testi-item p{
+.testi-item .title{
     color: var(--grey);
-    font-size: 1.5rem;
+    font-size: 22px;
     line-height: 1.5;
 }
 
-.testi-item .intro{
-    margin: 1rem 0;
-}
-
-.testi-item .intro h3{
-    font-size: 2rem;
-    color: var(--white);
-    padding-bottom: 0.5rem;
-}
-
-.testi-item .intro h5{
+.testi-item h5{
     color: var(--blue);
     font-size: 1.4rem;
     font-weight: 400;
 }
 
-/*--------------------- 9- Testimonials Area CSS (End) ---------------------*/
+.testi-item .comment{
+    color: var(--grey);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-block: 10px;
+}
+
+.center {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-projects {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  .border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn-projects:hover {
+    transition: 1s ease-in-out;
+    background: var(--blue);
+  }
+  
+  .btn-projects:hover .border {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn-projects span {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+/*--------------------- 9- Projects Area CSS (End) ---------------------*/
 
 
 
@@ -923,6 +952,32 @@ footer .content p a {
     font-size: 3rem;
     font-weight:lighter;
     background-color: green;
+    color: var(--white);
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .scroll-github{
+    position: fixed;
+    bottom: 8rem;
+    left:1rem;
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+    font-weight:lighter;
     color: var(--white);
     border-radius: 50%;
     -webkit-transition: all 0.2s;

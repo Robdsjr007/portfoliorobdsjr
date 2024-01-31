@@ -1,10 +1,10 @@
-/*--------------- Testimonial Slider ---------------*/ 
-var swiper = new Swiper(".testimonial-slider", {
+/*--------------- Projects Slider ---------------*/ 
+var swiper = new Swiper(".projeto-slider", {
 
     spaceBetween: 20,
     loop:true,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
       disableOnInteraction: false, 
     },
 

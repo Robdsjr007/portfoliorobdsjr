@@ -5,9 +5,13 @@
     }
     .home .image img{
         display: block;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         text-align: center;
+    }
+
+    .cards, .cards2 { 
+        height: auto;
     }
     
 }
@@ -78,13 +82,21 @@
 
     .home .image img{
         display: block;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         text-align: center;
     }
     .about-info .info .btn{
         display: block;
         justify-content: center;
+    }
+
+    .box-container {
+        padding-top: 50px;
+    }
+
+    .cards, .cards2 { 
+        height: auto;
     }
 
 }
@@ -109,12 +121,18 @@
 
     .header .image img{
         display: block;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         justify-content: center;
     }
 
-    
+    .box-container {
+        padding-top: 50px;
+    }
+
+    .cards, .cards2 { 
+        height: auto;
+    }
 }
 
 /*--------------------- Responsive (End) ---------------------*/
