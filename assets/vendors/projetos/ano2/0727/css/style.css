@@ -1,0 +1,9 @@
+* {
+    color:#fff;
+}
+body{
+    background-color: rgb(70, 70, 70);
+    font-family: monospace;
+    font-size: 21px;
+    text-align: center;
+}

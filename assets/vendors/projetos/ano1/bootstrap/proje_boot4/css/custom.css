@@ -1,0 +1,69 @@
+body, html{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#header{
+    width: 100%;
+    background-color: transparent;
+}
+
+#header .navbar-collapse{
+    width: auto;
+    background-color: transparent;
+}
+
+#header .nav-link{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: black;
+    border-bottom: solid 2px transparent;
+}
+
+#header .nav-link:hover{
+    border-bottom: solid 2px rgb(53, 0, 102);
+    color: rgb(53, 0, 102);
+}
+
+#alerta .alert-info {
+	color: rgb(53, 0, 102);
+    background-color: rgba(223, 184, 245, 0.952);
+    border-color: rgba(223, 184, 245, 0.952);
+	text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.container .card{
+    border: solid 1px rgb(0, 61, 102);
+}
+
+.container .card-text {
+    background-color: #96bbd4;
+}
+
+.container .btn-primary {
+    background-color: #4590ad;
+    border-color: #87ecfa;
+}
+
+.container .btn-primary:hover {
+    background-color: #87ecfa;
+}
+
+.container .form-control:focus {
+    box-shadow: rgb(185, 213, 236) 0px 0px 0px 3px;
+    border-color: #a4cbdd;
+}
+
+.container .form-select:focus {
+    box-shadow: rgb(185, 213, 236) 0px 0px 0px 3px;
+    border-color: #a4cbdd;  
+}
