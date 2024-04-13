@@ -10,7 +10,6 @@
         
     } else {
         require "erro.html";
-    endif;
 }
 
 ?>
