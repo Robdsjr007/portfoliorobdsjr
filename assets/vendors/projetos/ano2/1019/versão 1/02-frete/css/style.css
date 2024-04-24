@@ -1,0 +1,94 @@
+@import url('estilo.css');
+
+.center {
+    margin: auto;
+    width: 65% ;
+    border: 3px solid rgb(207, 164, 23);
+    padding: 10px;}
+
+h1{
+    display: grid;
+    font-size: 25px;
+    margin: 15px;
+    text-align: center;
+    width: auto;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 8px 0px #0f0f0f2e;}
+p{
+    display: grid;
+    font-size: 20px;
+    margin: 15px;
+    text-align: center;
+    width: auto;
+    box-shadow: 5px 8px 0px #0f0f0f2e;}
+
+input[type=text] {
+    width: 70%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    color:#fff;
+    box-sizing: border-box;
+    border: 2px solid #e59a23;
+    background-color: transparent;}
+
+form {
+    display: flex;}
+    
+.produtos{
+    text-align: center;
+}
+
+.resposta {
+    display: grid;
+    padding: 20px 0;
+    width: 30px auto;
+    color: #fff;
+    font-size: 1rem;}
+
+select {
+    cursor: pointer;
+    width: 60%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #e59a23;
+    margin: 5px;}
+
+.div01 {
+    border: 1px solid #e59a23;
+    width: 350px;
+    height: 250px; 
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-right: 10px; 
+    margin-left: auto;
+    align-items: center;
+    text-align: center;}
+
+.div02 {
+    border: 1px solid #e59a23;
+    width: 350px;
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    margin-right: auto;}
+
+.div03 {
+    border: 1px solid #e59a23;
+    width: 350px;
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    margin-right: auto;}
+    
+.div03 h2{
+    text-align: center;
+}

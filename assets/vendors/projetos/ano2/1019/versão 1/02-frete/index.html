@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Frete</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="header-social-links">
+        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center center" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="titulo"> FRETE DO CLIENTE </h1> <br><br>
+      <form action="#" method="get">
+        <div class="div01">
+          <label> Digite os pontos do Cliente: </label>
+          <input type='text' id='pontos' name='pontos' required>
+          <br>
+          <label for="origem"> Selecione a Origem do Cliente: </label>
+          <select id="origem" name="origem">
+            <option selected disabled>Escolha...</option>
+            <option value="Sul">Sul</option>
+            <option value="Sudeste">Sudeste</option>
+            <option value="Centro-Oeste">Centro-Oeste</option>
+            <option value="Norte">Norte</option>
+            <option value="Nordeste">Nordeste</option>
+          </select>
+          <input class="btn-hero" type="submit" value="Enviar">
+        </div>
+        <div class="div02">
+          <p>Preço do Frete:</p>
+          <p id="resposta" class="resposta"></p>
+        </div>
+      </form>
+      <br><br>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Daniel Alves</span></strong>. Todos os Direitos Reservados
+      </div>
+    </div>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="js/script.js"></script>
+    <!-- <script src="http://etec199-2021-danielalves.atwebpages.com/03-javascript/assets/js/verificar.js"></script> -->
+</body>
+
+</html>

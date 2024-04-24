@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Financiamento</title>
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt="logo" class="img-fluid"></a>
+      <div class="header-social-links">
+        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center center" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="titulo">FINANCIAMENTO</h1> <br><br>
+      <form action="#" method="get">
+        <div class="div01">
+          <label> Digite o Valor para Financiar: </label>
+          <input type='text' id='financa' name='financa' required>
+          <br>
+          <label for="origem"> Selecione a Parcela: </label>
+          <select id="origem" name="origem">
+            <option selected disabled>Selecione...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <input class="btn-hero" type="submit" onclick='resultado();' value="Enviar">
+        </div>
+        <div class="div02">
+          <p>Preço do Frete:</p>
+          <p id="resposta" class="resposta"></p>
+        </div>
+      </form>
+      <br><br>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Daniel Alves</span></strong>. Todos os Direitos Reservados
+      </div>
+    </div>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="js/script.js"></script>
+    <!-- <script src="http://etec199-2021-danielalves.atwebpages.com/03-javascript/assets/js/verificar.js"></script> -->
+</body>
+
+</html>
