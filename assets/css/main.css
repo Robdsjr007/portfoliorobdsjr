@@ -493,17 +493,27 @@ header #menu-btn:hover{
     width:100%;
 }
 
+.skill-item.item1 .box:nth-child(4) .progress-bar span{
+    width: 80%;
+}
+
+
 .skill-item.item2 .box:nth-child(1) .progress-bar span{
     width:100%;
 }
 
  .skill-item.item2 .box:nth-child(2) .progress-bar span{
-    width:55%;
+    width:100%;
 }
 
  .skill-item.item2 .box:nth-child(3) .progress-bar span{
-    width:65%;
+    width:35%;
 }
+
+.skill-item.item2 .box:nth-child(3) .progress-bar span{
+    width:75%;
+}
+
 
 /*--------------------- 5- About Area CSS (End) ---------------------*/
 

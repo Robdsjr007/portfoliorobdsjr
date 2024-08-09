@@ -7,6 +7,20 @@
     list-style: none;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+section h2 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-block: 20px;
+}
+
 a {
     width: 80%;
     height: 18%;
@@ -14,8 +28,8 @@ a {
 
 
 html {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 body {
@@ -28,8 +42,8 @@ body {
 }
 
 .Container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(45deg, black, rgb(0, 0, 65));
     background-size: 200%;
     animation: colors 10s ease infinite;
@@ -58,6 +72,16 @@ main {
     align-items: center;
 }
 
+.controls {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media(max-width: 715px) {
+    .controls {
+        flex-wrap: wrap !important;
+    }
+}
 
 .cards {
     display: grid;
@@ -100,9 +124,9 @@ main {
 }
 
 .card img {
-    height: 140px;
-    width: 150px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
+    object-fit: contain;
 }
 
 .card p {
