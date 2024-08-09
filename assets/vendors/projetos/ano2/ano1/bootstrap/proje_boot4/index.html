@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <title>Projeto Bootstrap</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <!-- Inicio do menu -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./imagens/logotipo.png" alt="logotipo"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projeto.html">Projeto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="equipe.html">Nossa Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="atuacao.html">Área de Atuação</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Final do menu -->
+  <!-- Inicio do Carrosel -->
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens/banner_01.jpg" class="d-block w-100" alt="Raposa 01">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/banner_02.jpg" class="d-block w-100" alt="Raposa 02">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/banner_03.jpg" class="d-block w-100" alt="Raposa 03">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Final do Carrosel -->
+
+  <div class="container">
+    <div id="alerta">
+      <div class="alert alert-info" role="alert">
+        CONHEÇA NOSSO PROJETO!
+      </div>
+    </div>
+  </div>
+
+  <!-- Inicio do Conteudo -->
+  <div class="container">
+    <!-- Inicio dos Cards -->
+    <h2>Produtos</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="imagens/card_1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/card_2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/card_3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <h2>Serviços</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="imagens/card_4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Saber mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/card_5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Saber mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/card_6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="btn btn-primary">Saber mais</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- fim dos Cards -->
+    <!-- Início do rodapé-->
+    <footer class="pt-4">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="imagens/logotipo.png" alt="logotipoo">
+          <small class="d-block mb-3 text-muted">&copy; 2021-2022 </small>
+        </div>
+        <div class="col-12 col-md">
+          <h5>Empresa</h5>
+          <ul class="list-unstyled text-small">
+            <li class="text-muted"><a href="#">Início</a></li>
+            <li class="text-muted"><a href="quemsomos.html">Quem Somos</a></li>
+            <li class="text-muted"><a href="equipe.html">Nossa Equipe</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md">
+          <h5>Produtos</h5>
+          <ul class="list-unstyled text-small">
+            <li class="text-muted"><a href="projeto.html">Projeto</a></li>
+            <li class="text-muted"><a href="atuacao.html">Área de Atuação</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md">
+          <h5>Contato</h5>
+          <ul class="list-unstyled text-small">
+            <li class="text-muted"><a href="contato.html">Fale Conosco</a></li>
+            <li class="text-muted"><a href="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"><img src="imagens/WhatsApp.svg" width="23" height="23" alt="whatsapp"/>Whatsapp</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Final do rodapé-->
+  </div>
+<!-- Fim do container -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

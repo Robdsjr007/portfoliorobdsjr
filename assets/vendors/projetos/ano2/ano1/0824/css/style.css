@@ -1,0 +1,171 @@
+.container {
+		border: 1px solid #000;
+		background-color: #dCd;
+		width: 1200px;
+		height: 1600px;
+		margin: 0 auto;
+}
+
+.tophome {
+		background-color: #F5DEB3;
+		width: 1190px;
+		height: 100px;
+		margin: 5px;
+}
+
+.logotipo {
+	background-color: #FF69B4;
+	height: 98px;
+	width: 98px;
+	margin: 1px;
+	float: left;
+}
+
+.titulo {
+	background-color: #FF69B4;
+	width: 1088px;
+	height: 98px;
+	margin: 1px;
+	float: right;
+	text-align: center;
+}
+
+.banner {
+		background-color: #98CEEB;
+		width: 1190px;
+		height: 350px;
+		margin: 5px;
+}
+
+.menu {
+		background-color: #FF69B4;
+		width: 1180px;
+		height: 370px;
+		margin: 5px;
+}
+
+.conteudo {
+		background-color: #ADFF2F;
+		width: 1190px;
+		height: 930px;
+		margin: 5px;
+}
+
+.quadrocidade {
+	background-color: #000;
+	width: 390px;
+	height: 147px;
+	margin-top: 25px;
+	margin-left: 2px;
+	float: left;
+	color: #fff;
+	text-align: center;
+}
+
+div.preco {
+	font-size: 30px;
+}
+
+div.descricao {
+	background-color: #fff; /* cor de fundo */
+}
+
+img.cidade {
+	margin-top: 5px;
+	width: 375px;
+	height: 135px;
+}
+
+.noticia{
+	background-color: #EE82EE;
+	width: 1180px;
+	height: 410px;
+	margin: 5px;
+	float: left;
+}
+
+.extras {
+	background-color: #EE82EE;
+	width: 1180px;
+	height: 125px;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+div.criadores1 {
+	background-color: #fff;
+	width: 324px;
+	height: 107px;
+	margin-top: 10px;
+	margin-left: 5px;
+	float: left;
+}
+
+div.criadores2 {
+	background-color: #fff;
+	width: 324px;
+	height: 107px;
+	margin-top: 10px;
+	margin-left: 100px;
+	float: left;
+}
+
+div.criadores3 {
+	background-color: #fff;
+	width: 324px;
+	height: 107px;
+	margin-top: 10px;
+	margin-right: 5px;
+	float: right;
+}
+
+
+div.resumo {
+	width: 200px;
+	height: 45px;
+}
+
+.rodape {
+		background-color: #EE82EE;
+		width: 1190px;
+		height: 190px;
+		margin: 5px;
+}
+
+.rodapemap {
+	background-color: #87CEEB;
+	width: 1180px;
+	height: 155px;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+div.contato {
+	background-color: #fff;
+	width: 310px;
+	height: 135px;
+	margin-top: 10px;
+	margin-left: 5px;
+	float: left;
+}
+
+div.voltar {
+	background-color: #fff;
+	width: 310px;
+	height: 135px;
+	margin-top: 10px;
+	margin-right: 5px;
+	float: right;
+}
+
+.rodapecopy {
+	background-color: #87CEEB;
+	width: 1180px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+	text-align: center;
+}

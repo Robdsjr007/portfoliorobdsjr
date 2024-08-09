@@ -1,0 +1,169 @@
+.container {
+		border: 1px solid #000;
+		background-color: #dCd;
+		width: 1200px;
+		height: 1800px;
+		margin: 0 auto;
+}
+
+.tophome {
+		background-color: #F5DEB3;
+		width: 1190px;
+		height: 100px;
+		margin: 5px;
+}
+
+.logotipo {
+	background-color: #FF69B4;
+	width: 98px;
+	height: 98px;
+	margin: 1px;
+	float: left;
+}
+
+.telefone {
+	background-color: #FF69B4;
+	width: 1088px;
+	height: 69px;
+	margin: 1px;
+	float: right;
+	text-align: right;
+}
+
+.endereco {
+	background-color: #ADFF2F;
+	width: 1088px;
+	height: 22px;
+	margin: 1px;
+	float: right;
+	text-align: right;
+}
+
+.banner {
+		background-color: #98CEEB;
+		width: 1190px;
+		height: 400px;
+		margin: 5px;
+}
+
+.menu {
+		background-color: #FF69B4;
+		width: 1190px;
+		height: 80px;
+		margin: 5px;
+}
+
+.conteudo {
+		background-color: #ADFF2F;
+		width: 1190px;
+		height: 1000px;
+		margin: 5px;
+}
+
+.quadro{
+	background-color: #fff;
+	width: 1180px;
+	height: 300px;
+	margin: 5px;
+	float: left;
+}
+
+.quadropromocao {
+	background-color: #ADFF2F; /* cor de fundo */
+	width: 287px; /* largurao */
+	height: 290px; /* altura */
+	border: 1px solid #000; /* borda */
+	margin-top: 2px; /* margem superior */
+	margin-left: 5px; /* margem a esquerda */
+	float: left; /* permissão de objetos a esquerda */
+}
+
+img.pro{
+	border: 1px solid #000; /* borda */
+	margin: 3px;
+}
+
+div.preco {
+	font-size: 30px;
+}
+
+div.descricao {
+	background-color: #fff; /* cor de fundo */
+}
+
+.quadroparceiro {
+	background-color: #000;
+	width: 390px;
+	height: 147px;
+	margin-top: 2px;
+	margin-left: 2px;
+	float: left;
+	color: #fff;
+	text-align: center;
+}
+
+img.parceiro {
+	margin-top: 5px;
+}
+
+.noticia{
+	background-color: #fff;
+	width: 1180px;
+	height: 370px;
+	margin: 5px;
+	float: left;
+}
+
+.noticiacoluna {
+	background-color: #EE82EE;
+	width: 582px;
+	height: 360px;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+img.not {
+	margin: 1px;
+	float: left;
+	margin-top: auto;
+}
+
+div.resumo {
+	width: 200px;
+	height: 45px;
+}
+
+.rodape {
+		background-color: #EE82EE;
+		width: 1190px;
+		height: 190px;
+		margin: 5px;
+}
+
+.rodapemap {
+	background-color: #87CEEB;
+	width: 1180px;
+	height: 155px;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+div.colunapar {
+	background-color: #fff;
+	width: 310px;
+	height: 135px;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+.rodapecopy {
+	background-color: #87CEEB;
+	width: 1180px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Formuário das Cidades
+		</title>
+		<Meta name="author" content="Daniel Alves">
+		<Meta name="description" content="Aula sobre criar formularios com HTML">
+		<Meta name="keywords" content="aula, formulário, html, educação, web, etec">
+	</head>
+		<body>
+			<h4 align="center">
+		<a href="index.html", style="color:black"> Início  |  </a>
+		<a href="saopaulo.html", style="color:black"> São Paulo  |  </a>
+		<a href="riodejaneiro.html", style="color:black"> Rio de Janeiro  |  </a>
+		<a href="salvador.html", style="color:black"> Salvador  |  </a>
+		<a href="belohorizonte.html", style="color:black"> Belo Horizonte  |  </a>
+		<a href="fortaleza.html", style="color:black"> Fortaleza  |  </a>
+		<a href="curitiba.html", style="color:black"> Curitiba  |  </a>
+		<a href="contato.html", style="color:black"> Contato  |  </a>
+		</h4>
+			<form action="#" method="post">
+				<fieldset>
+					<fieldset class="grupo">
+						<div class="campo">
+							<label for="nome">Nome</label>
+							<input type="text" name="nome" id="nome">
+						</div>
+						<div class="campo">
+							<label for="snome">Sobrenome</label>
+							<input type="text" name="snome" id="snome">
+						</div>
+					</fieldset>
+					<div class="campo">
+						<label class="escolha">
+							<input type="radio" name="sexo" value="masculino"> Masculino
+						</label>
+						<label class="escolha">
+							<input type="radio" name="sexo" value="feminino"> Feminino
+						</label>
+					</div>
+					<div class="campo">
+						<label for="email">E-mail<label>
+							<input type="text" id="email" name="email">
+						</div>
+						<div class="campo">
+							<label for="telefone">Telefone</label>
+								<input type="text" id="telefone" name="telefone">
+						</div>
+						<fieldset class="grupo">
+							<div class="campo">
+								<label for="cidade">Cidade</label>
+								<input type="text" id="cidade" name="cidade">
+							</div>
+							<div class="campo">
+								<label for="estado">Estado</label>
+								<select name="estado" id="estado">
+									<option value="SP">SP</option>
+									<option value="RJ">RJ</option>
+									<option value="ES">ES</option>
+									<option value="MG">MG</option>
+								</select>
+							</div>
+						</fieldset>
+						<label for="mensagem">Avalie o nosso site e me diga o que à de bom em sua região.</label>
+							<div class="campo">
+							<textarea rows="6" cols="30" id="mensagem" name="mensagem"></textarea>
+						</div>
+						<div class="campo">
+							<label>botãozinho</label>
+							<label>
+								<input type="checkbox" name="newslettter" value="1"> Finja que esse formulário realmente funciona e foi enviado para um email. 
+							</label>
+						</div>
+					<button type="submit" class="botao submit">Enviar</button>
+					<button type="reset" class="botao limpar">Limpar</button>
+				</fieldset>
+			</form>
+		</body>
+</html>
