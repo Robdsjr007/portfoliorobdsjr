@@ -1,0 +1,694 @@
+@font-face {
+  font-family: 'Dancing';
+  src: url('../vendor/font/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Imperial';
+  src: url('../vendor/font/Imperial_Script/ImperialScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+/* Declaração de família das fontes: */
+
+/*
+Dancing Script:
+    font-family: 'Dancing', Times, serif;
+
+Imperial:
+    font-family: 'Imperial', Times, serif;
+*/
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  overflow-y: visible;
+}
+
+.up {
+  position: fixed;
+  right: 25px;
+  bottom: 10px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100%;
+  transition: ease-in 0.3s;
+}
+
+.up:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  left: 25px;
+  bottom: 10px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  transition: ease-in 0.3s;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+}
+
+section {
+  background-repeat: no-repeat;
+  background-size: 107%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 20vh;
+}
+
+#footer-index {
+  width: 100%; 
+  background-color: #2532AE; 
+  color: white;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Arial';
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li::after {
+  display: block;
+  height: 0px;
+  transition: height 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+li:hover::after {
+  height: 10px;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  bottom: -40px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0e76a8;
+}
+.example-2 .icon-content a[data-social="facebook"] .filled,
+.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+  background-color: #3b5998;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background-color: #DD2A7B;
+}
+
+
+h1 {
+  font-family: 'Imperial', Times, serif;
+  color: black;
+  font-weight: 100;
+  text-align: center;
+  font-size: 76px;
+  margin-top: 20px;
+}
+
+main {
+  width: 100vw;
+  min-height: 75vh;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  max-width: 20vw;
+  min-width: 250px;
+  height: 65vh;
+  max-height: 440px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25));
+}
+
+.card .card-image {
+  max-width: 100%;
+  height: 70%;
+  overflow-y: hidden;
+}
+
+/* Início da tela Home */
+
+#home main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#home main .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+
+}
+
+#home main .info img {
+  width: 320px;
+  height: 350px;
+  animation: esquerda 1s;
+}
+
+#home main .info h1 {
+  font-family: "ZCOOL XiaoWei", sans-serif;
+  margin-top: -50px;
+  font-weight: normal;
+  font-size: 60px;
+  animation: esquerda 1s;
+  min-height: 60px;
+}
+
+#home main .info p {
+  text-align: center;
+  font-family: 'Dancing', Times, serif;
+  margin-block: 10px;
+  font-size: 28px;
+  width: 300px;
+  min-height: 112px;
+  animation: esquerda 1.5s;
+}
+
+#home main .info .button {
+  font-family: 'Roboto';
+  text-decoration: none;
+  background-color: #2532AE;
+  color: white;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  align-content: center;
+  transition: ease-in 0.3s;
+  animation: esquerda 1.5s;
+  border: none;
+}
+
+#home main .info .link-produtos {
+  margin-right: 5px;
+}
+
+#home main .info .link-sobre {
+  margin-left: 5px;
+}
+
+
+#home main .info .button:hover {
+  background-color: #706100;
+  transition: ease-out 0.5s;
+  transform: scale(1.07);
+}
+
+#home main .info .buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-inline: 10%;
+}
+
+
+#home main .para-imagem {
+  margin-right: 0;
+  width: 50vw;
+  border-radius: 50% 0 0 50%;
+  filter: opacity(0.45);
+  animation: direita 1s;
+}
+
+#home main .para-imagem img {
+  height: 100vh;
+  width: 100%;
+}
+
+@keyframes esquerda {
+  from {
+    opacity: 0;
+    translate: -100vw 0;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes direita {
+  from {
+    opacity: 0;
+    translate: 100vw 0;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes cima {
+  from {
+    opacity: 0;
+    translate: 0 -100vh;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+
+/* Fim da sessão home */
+
+
+/* Início da sessão MVV */
+
+#mvv {
+  background-image: url('../img/background-mvv.png');
+}
+
+#mvv header h1 {
+  color: white;
+  animation: cima 1s;
+}
+
+.card .missao,
+.visao,
+.valores {
+  width: 100%;
+  height: 100%;
+}
+
+.card-missao,
+.card-produto1 {
+  margin-left: 100px;
+  animation: esquerda 3s ease-in-out;
+}
+
+.card-valores,
+.card-produto3 {
+  margin-right: 100px;
+  animation: direita 3s ease-in-out;
+}
+
+.card .info {
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+.card h2 {
+  margin-block: 8px;
+  color: #2532AE;
+}
+
+.card p {
+  margin-inline: 15px;
+  font-size: 10px;
+  text-align: justify;
+}
+
+/* Fim da sessão MVV */
+
+/* Início da sessão Produtos */
+
+#produtos {
+  background-image: url('../img/background-produtos.png');
+}
+
+
+.card .header-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.card .header-card h2 {
+  color: black;
+  font-size: 25px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.card .header-card p {
+  margin-top: -8px;
+  font-size: 10px;
+  font-family: 'Roboto';
+  color: #717171;
+}
+
+.card .conteudo-card {
+  background-image: url('../img/circulo.png');
+  background-size: 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+
+.card .conteudo-card .tecidos {
+  width: 170px;
+  height: 110px;
+  border-radius: 20px 20px 20px 20px;
+  filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.25));
+}
+
+.card .footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+
+.card .footer-card p {
+  margin-right: 0;
+  width: auto;
+  font-size: 25px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.card .footer-card strong {
+  font-family: 'roboto';
+  margin: 0;
+  padding: 0;
+  padding-right: 45px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.card .footer-card img {
+  width: 80px;
+  height: 80px;
+  transition: ease-in 0.3s;
+}
+
+.card .footer-card img:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+}
+
+/* Fim da sessão Produtos */
+
+/* Início da sessão Testemunhos */
+
+#testemunhos {
+  background-image: url('../img/background-mvv.png');
+}
+
+
+#testemunhos header h1 {
+  color: white;
+}
+
+
+#testemunhos main article .card-test {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  filter: drop-shadow(0px 6px 2px rgba(0, 0, 0, 0.25));
+  width: 500px;
+  height: 200px;
+}
+
+#testemunhos main .header {
+  height: 25%;
+}
+
+#testemunhos main .header img {
+  width: 25px;
+  height: 20px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+
+#testemunhos main .main {
+  display: flex;
+  margin-inline: 30px;
+}
+
+#testemunhos main .main p {
+  width: 350px;
+  text-indent: 10px;
+  text-align: right;
+  font-size: 16px;
+  min-height: 100px;
+}
+
+#testemunhos main .main img {
+  margin-left: 10px;
+  min-width: 96px;
+  border-radius: 100%;
+}
+
+#testemunhos main .footer h2 {
+  font-family: 'Roboto';
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+
+#testemunhos main .main {
+  height: 50%;
+}
+
+
+#testemunhos main .footer {
+  height: 25%;
+}
+
+#testemunhos main .card-test-container1 {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
+#testemunhos main .card-test-container2 {
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#testemunhos main .card-test-container1 .card-test {
+  margin-bottom: 10px;
+}
+
+
+#testemunhos main .card-test-container2 .card-test {
+  margin-bottom: 10px;
+}
+
+/* Fim da sessão Testemunhos */
+
+/* Início da sessão Contato */
+
+
+section .header-contato {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20vh;
+}
+
+section .header-contato p {
+  text-align: center;
+  width: 100%;
+  font-family: 'Imperial';
+  font-size: 76px;
+}
+
+.main-contato {
+  display: flex;
+}
+
+section main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  height: 80vh;
+}
+
+section main form p {
+  font-family: 'Roboto';
+  font-size: 10px;
+  min-height: 10px;
+  margin-bottom: 30px;
+}
+
+section main form p a {
+  color: #6941C6;
+}
+
+section main form .fields {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+section main form .fields label {
+  min-height: 19px;
+  font-family: 'Roboto';
+  margin-bottom: 5px;
+}
+
+section main form .fields input, textarea {
+  font-family: 'Roboto';
+  width: 100%;
+  margin-bottom: 10px;
+  border: 0.5px solid #afb1b69f;
+  border-radius: 2px;
+  min-height: 30px;
+}
+
+section main form .fields textarea {
+  height: auto !important;
+}
+
+section main form .fields input,textarea {
+  padding-left: 10px;
+}
+
+section main form .fields textarea {
+  padding-top: 5px;
+}
+
+
+section main form button {
+  font-family: 'Roboto';
+  font-size: 15px;
+  background-color: #2532AE;
+  color: white;
+  width: 360px;
+  height: 50px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 10px;
+}
+
+section main .maps-container {
+  display: flex;
+  width: 50vw;
+  height: 80vh;
+}
+
+
+/* Fim da sessão Contato */

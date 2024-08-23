@@ -1,0 +1,21 @@
+@media (max-width: 700px) {
+  #historia {
+    height: 130vh !important;
+  }
+
+  #apresentacao {
+    height: 130vh !important;
+  }
+
+  #historia main {
+    height: 100vh !important;
+  }
+
+  .image-historia {
+    align-items: start !important;
+  }
+
+  #apresentacao header {
+    margin-top: 50px;
+  }
+}

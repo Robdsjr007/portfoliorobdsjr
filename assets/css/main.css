@@ -23,11 +23,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
+    --bg-card: #27272a;
+    --primary: #6d28d9;
+    --primary-800: #4c1d95;
+    --primary-shadow: #2e1065;
+    --light: #d9d9d9;
+    --zinc-800: #18181b;
+    --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
     --purple: #BC8CF2;
     --black: #000000;
     --white: #F7F5F2;
     --grey: #DFDFDE;
     --blue: rgb(110, 110, 248);
+    --green: rgb(34, 119, 34);
 }
 
 *{
@@ -130,6 +138,7 @@ section{
 /*--------------------- 2- Button CSS (Start) ---------------------*/
 .btn{
     display: inline-block;
+    text-align: center;
     padding: 1rem 2rem;
     font-size: 1.8rem;
     color: var(--blue);
@@ -137,7 +146,7 @@ section{
     border: 0.2rem solid var(--blue);
 }
 
-.btn i{
+.btn i {
     padding-left: 1rem;
 }
 
@@ -497,22 +506,43 @@ header #menu-btn:hover{
     width: 80%;
 }
 
+.skill-item.item1 .box:nth-child(5) .progress-bar span{
+    width:75%;
+}
 
-.skill-item.item2 .box:nth-child(1) .progress-bar span{
+.skill-item.item1 .box:nth-child(6) .progress-bar span{
     width:100%;
 }
 
- .skill-item.item2 .box:nth-child(2) .progress-bar span{
+.skill-item.item1 .box:nth-child(7) .progress-bar span{
     width:100%;
+}
+
+.skill-item.item2 .box:nth-child(1) .progress-bar span{
+    width: 100%;
+}
+
+.skill-item.item2 .box:nth-child(2) .progress-bar span{
+    width: 70%;
 }
 
  .skill-item.item2 .box:nth-child(3) .progress-bar span{
-    width:35%;
+    width:100%;
 }
 
-.skill-item.item2 .box:nth-child(3) .progress-bar span{
-    width:75%;
+ .skill-item.item2 .box:nth-child(4) .progress-bar span{
+    width: 50%;
 }
+
+.skill-item.item2 .box:nth-child(5) .progress-bar span{
+    width: 100%;
+}
+
+.skill-item.item2 .box:nth-child(6) .progress-bar span{
+    width: 75%;
+}
+
+
 
 
 /*--------------------- 5- About Area CSS (End) ---------------------*/

@@ -1,0 +1,111 @@
+@media (max-width: 780px) {
+  #home main {
+    flex-direction: column;
+    min-height: 150vh !important;
+  }
+
+  #home main .info {
+    width: 100vw !important;
+
+  }
+
+  #home main .info h1 {
+    font-family: "ZCOOL XiaoWei", sans-serif;
+    margin-top: -50px;
+    font-weight: normal;
+    font-size: normal;
+  }
+
+  #home main .para-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw !important;
+  }
+
+  #home main .para-imagem img {
+    border-radius: 100%;
+    height: 450px !important;
+    width: 500px !important;
+  }
+
+  section {
+    height: 200% !important;
+  }
+
+  #produtos {
+    background-size: 650vh !important;
+  }
+
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+
+  .card {
+    margin-block: 20px;
+  }
+
+  .card-missao,
+  .card-produto1 {
+    margin-left: 0 !important;
+  }
+
+  .card-valores,
+  .card-produto3 {
+    margin-right: 0 !important;
+  }
+
+
+  #contato .main-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contato .main-contato form{
+    width: 100vw !important;
+    height: auto !important;
+  }
+
+  #contato .main-contato form input{
+    height: 50px;
+  }
+  
+
+  #contato .main-contato .maps-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw !important;
+    align-items: start !important;
+  }
+
+  #contato .main-contato .maps-container iframe {
+    height: 520px;
+  }
+
+}
+
+@media (min-width: 781px) and (max-width: 950px) {
+
+  section {
+    height: 200% !important;
+  }
+
+  #produtos {
+    background-size: 250% !important;
+  }
+
+  .card-visao,
+  .card-produto3 {
+    margin-right: 100px;
+  }
+
+  .card-valores,
+  .card-produto3 {
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+}

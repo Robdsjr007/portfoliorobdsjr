@@ -96,7 +96,7 @@ main {
     color: white;
 }
 
-.card {
+/* .card {
     opacity: 0; 
     animation: fadeIn 1s ease-in-out forwards; 
     border: 1px solid white;
@@ -106,50 +106,177 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px); /* Opcional: pode adicionar um leve deslocamento para cima */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.card h1 {
-    margin-top: 5px;
-}
 
-.card img {
+
+/* From Uiverse.io by pkwebworks3 */ 
+.card {
+    --bg-card: #27272a;
+    --primary: #6d28d9;
+    --primary-800: #4c1d95;
+    --primary-shadow: #2e1065;
+    --light: #d9d9d9;
+    --zinc-800: #18181b;
+    --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    width: 20rem;
+    background-color: var(--bg-card);
+    border: 0.2px solid var(--blue);
+    border-radius: 1rem;
+  }
+  
+  .image_container {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    height: 11rem;
+    background-color: var(--primary-800);
+    border-radius: 0.5rem;
+  }
+  
+  .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .aplicativoImg {
+    height: 100%;
+    width: 100%;
     object-fit: contain;
 }
-
-.card p {
-    font-size: 12px;
-    margin-block: 15px;
-    font-weight: bolder;
-}
-
-.card button {
-    border-radius: 20px;
+  
+  .title {
+    overflow: clip;
     width: 100%;
-    height: 100%;
-    transform: translateY(15px);
-    opacity: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--light);
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .responsive {
+    width: max-content;
+    font-size: 1rem;
+    background-color: var(--green);
+    margin-block: 0.5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+  }
+  
+  .list-tech {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+  }
+
+  .list-tech p {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 1px 5px;
+    border-radius: 5px;
+    cursor: default;
+  }
+
+  .container_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .card a button {
+    width: 100%;
+    padding: 0.8rem;
     transition: 0.5s; 
-    margin-bottom: 15px;   
+    font-size: small;
 }
 
 
-.card:hover button{
-    transform: translateY(0px);
-    opacity: 1 !important;
-}
+.card a .button-download {
+    position: relative;
+    width: 158px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #301779;
+    background-color: #382099;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: -8px
+  }
+  
+  .card a .button-download,
+  .button__icon,
+  .button__text {
+    transition: all 0.3s;
+  }
+  
+  .card a .button-download .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .card a .button-download .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #171979;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card a .button-download .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .card a .button-download:hover {
+    background: #172779;
+  }
+  
+  .card a .button-download:hover .button__text {
+    color: transparent;
+  }
+  
+  .card a .button-download:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .card a .button-download:active .button__icon {
+    background-color: #146c54;
+  }
+  
+  .card a .button-download:active {
+    border: 1px solid #146c54;
+  }
+
+
+
 
 
 
